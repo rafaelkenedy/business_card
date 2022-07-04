@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.rafael.businesscard.App
 import com.rafael.businesscard.databinding.ActivityMainBinding
+import com.rafael.businesscard.util.Image
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,10 +31,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, AddBusinessCardActivity::class.java)
             startActivity(intent)
         }
+
+        adapter.listenerShare = { card ->
+            Image.share(this@MainActivity, card)
+        }
     }
 
     private fun getAllBusinessCard() {
-        mainViewModel.getAll().observe(this, {businessCards ->
+        mainViewModel.getAll().observe(this, { businessCards ->
             adapter.submitList(businessCards)
         })
     }
