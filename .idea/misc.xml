@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Cursos/Android Basics/BusinessCard/app/src/main/res/drawable/ic_round_add.xml" value="0.1155" />
+        <entry key="..\:/Cursos/Android Basics/BusinessCard/app/src/main/res/layout/activity_add_business_card.xml" value="0.25" />
         <entry key="..\:/Cursos/Android Basics/BusinessCard/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Cursos/Android Basics/BusinessCard/app/src/main/res/layout/item_business_card.xml" value="0.33" />
       </map>
